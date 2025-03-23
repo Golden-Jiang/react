@@ -52,19 +52,3 @@ export default tseslint.config({
   },
 })
 ```
-# Create React Project
-    step 01: 用系統管理員身份開啟 cmd
-    step 02: 進入工作目錄 (名稱可自訂隨意, 例如 D:\project\react 表示用 react 開發的專案都建立在此目錄下)
-    step 03: D:\project\react> 輸入 npm init vite@latest
-             [Project Name] 輸入 react-project ( react-project 是專案名稱, 自訂)
-             [Select a framework] 選擇 react
-             [Select a variant] 選擇 Javascript
-             專案建立中 ...
-    step 04: 進入專案目錄, 例如 cd react-project
-             安裝 npm 依賴 modules
-             npm install
-             執行 npm run dev
-    step 05: 安裝 scss
-             npm i sass
-    step 06: 安裝 icons
-             npm i react-icons

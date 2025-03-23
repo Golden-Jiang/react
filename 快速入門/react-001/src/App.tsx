@@ -2,6 +2,7 @@ import { Fragment } from "react/jsx-runtime"
 import ChildComp from "./Components/ChildComp"
 import "./sass/App.scss"
 import PropsComp from "./Components/PropsComp"
+import StateComp from "./Components/StateComp"
 
 const MyComponent = () => {
   return ( <h1>你好</h1> )
@@ -71,6 +72,8 @@ function App() {
           <ParaComponent />
         </MyComponent2>
 
+        <StateComp />
+        <StateComp />
       </div>
     </Fragment>
   )
