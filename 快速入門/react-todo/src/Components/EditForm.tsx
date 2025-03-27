@@ -1,12 +1,11 @@
 import { useState } from "react";
 
-const CreateForm = ({addTodo}: any) => {
-  const [content,setContent] = useState('')
+const EditForm = ({todo, editTodo}: any) => {
+  const [content,setContent] = useState(todo.content)
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
-    addTodo(content)
-    setContent('')
+    editTodo(todo.id, content)
   }
 
   return (
@@ -20,10 +19,10 @@ const CreateForm = ({addTodo}: any) => {
         <button 
             type="submit"
         >
-            加入
+            完成
         </button>
     </form>
   );
 };
 
-export default CreateForm;
+export default EditForm;
