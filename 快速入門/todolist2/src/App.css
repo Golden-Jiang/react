@@ -17,7 +17,7 @@
     .header {
       margin: 5px;
       padding: 5px;
-      border: 1px solid #000;
+      /* border: 1px solid #000; */
       input {
         width: 100%;
       }

@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import List from './Components/List'
 import Footer from './Components/Footer'
 // 引入本專案所有樣式
+import 'tailwindcss/tailwind.css'
 import './App.css';
 
 function App() {

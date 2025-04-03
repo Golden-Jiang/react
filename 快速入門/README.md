@@ -78,6 +78,11 @@ export default tseslint.config({
              npm i sass
     step 06: 安裝 icons
              npm i react-icons
+    step 07: 
+             npx tailwindcss init
+             import 'tailwindcss/tailwind.css'
+    step 08: npm install axios
+
 
 # Create React Project
     step 01: 用系統管理員身份開啟 cmd
@@ -95,6 +100,17 @@ export default tseslint.config({
              npm i sass
     step 06: 安裝 icons
              npm i react-icons
+    step 07: npm install -D tailwindcss@3 postcss auto-prefixer
+             npx tailwindcss init
+             tailwind.config.js
+               content: ["./src/**/*.{js,jsx,ts,tsx}",],
+             App.css
+                @tailwind base;
+                @tailwind components;
+                @tailwind utilities;
+
+
+    step 08: npm install axios
 
 # Create React Next.js Project
     step 01: 用系統管理員身份開啟 cmd
@@ -111,3 +127,5 @@ export default tseslint.config({
              npm i sass
     step 06: 安裝 icons
              npm i react-icons
+    step 07: npm install tailwindcss
+    step 08: npm install axios
