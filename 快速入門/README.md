@@ -78,13 +78,37 @@ export default tseslint.config({
              npm i sass
     step 06: 安裝 icons
              npm i react-icons
-    step 07: 
-             npx tailwindcss init
-             import 'tailwindcss/tailwind.css'
+    strp 07: 安裝 w3.css
+             將所有 w3 css 複製到 src\w3_css 目錄下
+             main.tsx
+                import './w3_css/w3.css'
+                import './w3_css/w3-colors-2017.css'
+                import './w3_css/w3-colors-2018.css'
+                import './w3_css/w3-colors-2019.css'
+                import './w3_css/w3-colors-2020.css'
+                import './w3_css/w3-colors-2021.css'
     step 08: npm install axios
+    step 09: install tailwindcss v3.0
+             npm install -D tailwindcss@3
+             npx tailwindcss init
+             tailwind.config.js
+                /** @type {import('tailwindcss').Config} */
+                module.exports = {
+                  content: ["./src/**/*.{html,js}"],
+                  theme: {
+                    extend: {},
+                  },
+                  plugins: [],
+                }
+             input.css
+                @tailwind base;
+                @tailwind components;
+                @tailwind utilities;
+             npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+    step 10: install ant-design
 
 
-# Create React Project
+# Create Vite React Project
     step 01: 用系統管理員身份開啟 cmd
     step 02: 進入工作目錄 (名稱可自訂隨意, 例如 D:\project\react 表示用 react 開發的專案都建立在此目錄下)
     step 03: D:\project\react> 輸入 npm init vite@latest
@@ -100,17 +124,54 @@ export default tseslint.config({
              npm i sass
     step 06: 安裝 icons
              npm i react-icons
-    step 07: npm install -D tailwindcss@3 postcss auto-prefixer
-             npx tailwindcss init
-             tailwind.config.js
-               content: ["./src/**/*.{js,jsx,ts,tsx}",],
-             App.css
-                @tailwind base;
-                @tailwind components;
-                @tailwind utilities;
-
-
+    strp 07: 安裝 w3.css
+             將所有 w3 css 複製到 src\w3_css 目錄下
+             main.tsx
+                import './w3_css/w3.css'
+                import './w3_css/w3-colors-2017.css'
+                import './w3_css/w3-colors-2018.css'
+                import './w3_css/w3-colors-2019.css'
+                import './w3_css/w3-colors-2020.css'
+                import './w3_css/w3-colors-2021.css'
     step 08: npm install axios
+    step 09: 安裝 FontAwsome 5
+            npm i --save @fortawesome/fontawesome-svg-core
+            npm i --save @fortawesome/free-solid-svg-icons
+            npm i --save @fortawesome/free-regular-svg-icons
+            npm i --save @fortawesome/free-brands-svg-icons
+
+            npm i --save @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
+
+            *.tsx
+              import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+              import { fab } from "@fortawesome/free-brands-svg-icons";
+              import { fas } from "@fortawesome/free-solid-svg-icons";
+              import { far } from "@fortawesome/free-regular-svg-icons";
+
+              <FontAwesomeIcon icon={fab.faReact}/>
+              <FontAwesomeIcon icon={far.faUser}/>
+              <FontAwesomeIcon icon={fas.faHouse}/>
+    step 10: 安裝 ant-design
+                npm install antd --save
+             按需引入
+                create-react-app
+                  npm add react-app-rewired customize-cra
+                  modify package.json
+                  add config-overrides.js
+                  npm add babel-plugin-import
+                -----------------------------------------
+                vite
+                  npm add vite-plugin-imp
+                  // vite.config.ts
+                  https://cloud.tencent.com/developer/article/1992214
+                React 19 兼容问题
+                  npm install @ant-design/v5-patch-for-react-19 --save
+                  在应用入口处引入兼容包 (index.js)
+                  import '@ant-design/v5-patch-for-react-19';
+
+    step 11: 安裝 Element UI for React
+                npm i element-react --save
+                npm install element-theme-default --save
 
 # Create React Next.js Project
     step 01: 用系統管理員身份開啟 cmd
