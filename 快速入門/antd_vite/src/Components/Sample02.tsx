@@ -20,7 +20,7 @@ const warning = () => {
 function Sample02() {
   return (
     <div>
-      <p className="w3-white w3-text-black w3-xxlarge">{"React Sample02"}</p>
+      <p className="w3-white w3-text-black w3-xxlarge">{"React Sample02(antd 組件)"}</p>
       <div className="w3-margin">
         <Button type="primary">Button</Button>
       </div>

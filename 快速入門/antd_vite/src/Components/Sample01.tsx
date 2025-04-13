@@ -14,7 +14,7 @@ const SayHello = () => {
 function Sample01() {
   return (
     <div>
-      <p className="w3-white w3-text-black w3-xxlarge">{'React Sample01'}</p>
+      <p className="w3-white w3-text-black w3-xxlarge">{'React Sample01 (基本語法)'}</p>
       <p className="w3-blue w3-xlarge">{<SayHello />}</p>
       <p className="w3-red w3-xlarge">{SayHello()} {value}</p>
       <p className="w3-black w3-xlarge">{console.log('Hi')} {Math.random()} {1+2*3}</p>
